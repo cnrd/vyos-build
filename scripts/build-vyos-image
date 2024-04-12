@@ -276,7 +276,7 @@ if __name__ == "__main__":
         # Retrieve git branch name
         git_branch = repo.active_branch.name
     except Exception as e:
-      exit(f'Could not retrieve information from git: {e}')
+      print(f'Could not retrieve information from git: {e}')
       build_git = ""
       git_branch = ""
 
